@@ -1,0 +1,29 @@
+name: full-stlc
+version: 0.1.0
+entrypoint: repository-analysis
+stages:
+  - id: repository-analysis
+    agent: repository-analysis-agent
+    produces: inventory
+  - id: test-planning
+    agent: test-planning-agent
+    needs: [inventory, requirements]
+    produces: test_plan
+  - id: plan-approval
+    type: human_approval
+    needs: [test_plan]
+  - id: api-design
+    agent: api-testing-agent
+    when: api_detected
+  - id: frontend-design
+    agent: frontend-testing-agent
+    when: web_detected
+  - id: environment-approval
+    type: human_approval
+    needs: [target, credentials_reference, allowlisted_commands]
+  - id: test-execution
+    agent: test-execution-agent
+    needs: [approved_plan, approved_environment]
+  - id: reporting
+    agent: test-report-agent
+    needs: [real_execution_results]

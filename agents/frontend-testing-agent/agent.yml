@@ -1,0 +1,14 @@
+{
+  "name": "frontend-testing-agent",
+  "version": "0.1.0",
+  "description": "Design browser workflows and stable Playwright selectors from confirmed UI behavior.",
+  "skills": [
+    "frontend-e2e-testing"
+  ],
+  "requires_approval_for": [
+    "external-writes",
+    "production-targets",
+    "active-security-scan",
+    "load-test"
+  ]
+}

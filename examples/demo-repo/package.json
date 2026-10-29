@@ -1,0 +1,1 @@
+{"name":"stlc-demo-web-api","private":true,"version":"0.1.0","description":"Local HTTP API and browser-rendered UI smoke fixture","scripts":{"start":"node server.mjs"},"dependencies":{}}

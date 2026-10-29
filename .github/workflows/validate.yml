@@ -1,0 +1,33 @@
+name: Validate STLC Registry
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate registry
+        run: python3 scripts/validate_registry.py
+      - name: Inspect repository read-only
+        run: python3 scripts/stlc.py inspect --config examples/platform.project.json --output artifacts/repository-inventory.json
+      - name: Create preliminary testing plan
+        run: python3 scripts/stlc.py plan --config examples/platform.project.json --output artifacts/test-plan.json
+      - name: Local demo FE/BE smoke tests
+        run: python3 scripts/stlc.py run-demo --config examples/demo.project.json --approve --output artifacts/demo-run.json
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stlc-validation
+          path: artifacts/
+          if-no-files-found: ignore
+          retention-days: 7

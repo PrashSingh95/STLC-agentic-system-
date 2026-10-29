@@ -1,0 +1,3 @@
+interface:
+  display_name: "Defect Analysis"
+  short_description: "Analyze real test failures and generate reproducible bug reports while dist"

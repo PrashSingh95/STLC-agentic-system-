@@ -1,0 +1,8 @@
+{
+  "project":"my-local-checkout",
+  "repository_provider":"github",
+  "repo_path":"/absolute/path/to/approved/checkout",
+  "requirements_path":"sample-requirements.md",
+  "environment":"local",
+  "execution_enabled":false
+}

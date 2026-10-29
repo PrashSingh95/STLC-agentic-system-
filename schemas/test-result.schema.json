@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "STLC Test Result",
+  "type": "object",
+  "required": [
+    "run_id",
+    "test_id",
+    "status",
+    "evidence"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "test_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "passed",
+        "failed",
+        "skipped",
+        "blocked",
+        "error"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "duration_ms": {
+      "type": "number",
+      "minimum": 0
+    }
+  },
+  "additionalProperties": false
+}

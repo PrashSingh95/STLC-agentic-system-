@@ -1,0 +1,3 @@
+interface:
+  display_name: "Api Functional Testing"
+  short_description: "Design API functional, negative, authorization and contract tests for verif"

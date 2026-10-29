@@ -1,0 +1,14 @@
+{
+  "name": "api-testing-agent",
+  "version": "0.1.0",
+  "description": "Design API positive, negative, auth and schema checks from verified contracts.",
+  "skills": [
+    "api-functional-testing"
+  ],
+  "requires_approval_for": [
+    "external-writes",
+    "production-targets",
+    "active-security-scan",
+    "load-test"
+  ]
+}

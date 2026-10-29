@@ -1,0 +1,3 @@
+interface:
+  display_name: "Test Execution"
+  short_description: "Execute pre-approved backend/API/frontend test plans using allowlisted tool"

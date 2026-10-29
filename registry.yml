@@ -1,0 +1,20 @@
+version: 1
+project: agentic-stlc
+agents:
+  - agents/stlc-orchestrator/agent.yml
+  - agents/repository-analysis-agent/agent.yml
+  - agents/test-planning-agent/agent.yml
+  - agents/api-testing-agent/agent.yml
+  - agents/frontend-testing-agent/agent.yml
+  - agents/test-execution-agent/agent.yml
+  - agents/test-report-agent/agent.yml
+skills:
+  - skills/repository-analysis/SKILL.md
+  - skills/test-planning/SKILL.md
+  - skills/api-functional-testing/SKILL.md
+  - skills/frontend-e2e-testing/SKILL.md
+  - skills/test-execution/SKILL.md
+  - skills/defect-analysis/SKILL.md
+  - skills/test-reporting/SKILL.md
+workflows:
+  - workflows/full-stlc/workflow.yml

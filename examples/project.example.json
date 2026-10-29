@@ -1,0 +1,11 @@
+{
+  "project": "demo-app",
+  "repo_path": "/absolute/path/to/repository",
+  "requirements_path": "/absolute/path/to/prd.md",
+  "web_base_url": "http://localhost:3000",
+  "api_base_url": "http://localhost:8080",
+  "environment": "local",
+  "execution_enabled": false,
+  "approved_commands": [],
+  "secrets_source": "environment variables (not stored here)"
+}

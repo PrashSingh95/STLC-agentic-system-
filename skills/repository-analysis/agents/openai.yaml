@@ -1,0 +1,3 @@
+interface:
+  display_name: "Repository Analysis"
+  short_description: "Analyze a software repository to identify architecture, FE/BE stacks, API c"

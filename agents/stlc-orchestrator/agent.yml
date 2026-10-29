@@ -1,0 +1,19 @@
+{
+  "name": "stlc-orchestrator",
+  "version": "0.1.0",
+  "description": "Control lifecycle, approvals, workflow state, routing and retries.",
+  "skills": [
+    "repository-analysis-agent",
+    "test-planning-agent",
+    "api-testing-agent",
+    "frontend-testing-agent",
+    "test-execution-agent",
+    "test-report-agent"
+  ],
+  "requires_approval_for": [
+    "external-writes",
+    "production-targets",
+    "active-security-scan",
+    "load-test"
+  ]
+}

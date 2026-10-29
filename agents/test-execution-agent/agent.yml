@@ -1,0 +1,14 @@
+{
+  "name": "test-execution-agent",
+  "version": "0.1.0",
+  "description": "Route approved, allowlisted test commands to isolated execution workers and capture artifacts.",
+  "skills": [
+    "test-execution"
+  ],
+  "requires_approval_for": [
+    "external-writes",
+    "production-targets",
+    "active-security-scan",
+    "load-test"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "project":"stlc-local-demo",
+  "repository_provider":"github",
+  "repo_path":"demo-repo",
+  "requirements_path":"sample-requirements.md",
+  "environment":"local",
+  "execution_enabled":true,
+  "allowlisted_target":"127.0.0.1"
+}

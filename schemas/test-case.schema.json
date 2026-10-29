@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "STLC Test Case",
+  "type": "object",
+  "required": [
+    "id",
+    "domain",
+    "requirement_ids",
+    "steps",
+    "assertions",
+    "priority"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "domain": {
+      "enum": [
+        "api",
+        "backend",
+        "frontend",
+        "database",
+        "security",
+        "performance",
+        "mobile"
+      ]
+    },
+    "requirement_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "assertions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "priority": {
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "P3"
+      ]
+    },
+    "source": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

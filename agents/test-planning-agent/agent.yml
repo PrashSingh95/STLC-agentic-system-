@@ -1,0 +1,14 @@
+{
+  "name": "test-planning-agent",
+  "version": "0.1.0",
+  "description": "Create traceable, risk-based test plan from evidence and requirements.",
+  "skills": [
+    "test-planning"
+  ],
+  "requires_approval_for": [
+    "external-writes",
+    "production-targets",
+    "active-security-scan",
+    "load-test"
+  ]
+}

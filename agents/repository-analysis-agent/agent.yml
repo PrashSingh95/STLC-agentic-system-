@@ -1,0 +1,14 @@
+{
+  "name": "repository-analysis-agent",
+  "version": "0.1.0",
+  "description": "Inspect read-only repository metadata and detect frameworks, services, test commands and risks.",
+  "skills": [
+    "repository-analysis"
+  ],
+  "requires_approval_for": [
+    "external-writes",
+    "production-targets",
+    "active-security-scan",
+    "load-test"
+  ]
+}

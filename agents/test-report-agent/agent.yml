@@ -1,0 +1,15 @@
+{
+  "name": "test-report-agent",
+  "version": "0.1.0",
+  "description": "Normalize evidence, analyze failures and produce a conservative quality recommendation.",
+  "skills": [
+    "defect-analysis",
+    "test-reporting"
+  ],
+  "requires_approval_for": [
+    "external-writes",
+    "production-targets",
+    "active-security-scan",
+    "load-test"
+  ]
+}

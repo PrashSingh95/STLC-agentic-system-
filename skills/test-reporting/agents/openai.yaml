@@ -1,0 +1,3 @@
+interface:
+  display_name: "Test Reporting"
+  short_description: "Summarize authentic STLC execution evidence as coverage, pass/fail, blocker"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Frontend E2E Testing"
+  short_description: "Design browser E2E user-journey tests for web applications using Playwright"

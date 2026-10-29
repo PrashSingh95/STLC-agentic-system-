@@ -1,0 +1,9 @@
+{
+  "project": "STLC-agentic-system-",
+  "repository_provider": "github",
+  "repository_url": "https://github.com/PrashSingh95/STLC-agentic-system-",
+  "repo_path": "..",
+  "requirements_path": "sample-requirements.md",
+  "environment": "local",
+  "execution_enabled": false
+}

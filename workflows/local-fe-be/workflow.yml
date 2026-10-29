@@ -1,0 +1,19 @@
+name: local-fe-be
+version: 0.2.0
+source: local-github-checkout
+stages:
+  - id: inspect
+    agent: repository-analysis-agent
+    mode: read_only
+  - id: plan
+    agent: test-planning-agent
+    mode: read_only
+  - id: approval
+    type: human_approval
+  - id: execute_demo
+    agent: test-execution-agent
+    constraint: bundled_demo_only
+    command: python3 scripts/stlc.py run-demo --config examples/demo.project.json --approve
+  - id: report
+    agent: test-report-agent
+    source: actual_execution_evidence
